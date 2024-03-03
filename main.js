@@ -22,8 +22,13 @@ async function typing(){
 
 function switchTopic(el){
     let elementName = el.innerHTML.toLowerCase().replace(/\s+/g, '-');
+    let element = document.querySelector(`.${elementName}.text`);
+    let isActive = element.classList.contains("active")
     document.querySelector(`.text.active`).classList.toggle("active");
-    document.querySelector(`.${elementName}.text`).classList.toggle("active");
+    if (isActive)
+        document.querySelector(`.main.text`).classList.toggle("active");
+    else
+        element.classList.toggle("active");
 
     typing()
 }
