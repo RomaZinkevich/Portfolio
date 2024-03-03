@@ -263,3 +263,9 @@ p.website {
         font-size: 15px;
     }
 }
+
+@media(max-width:300px){
+    .welcome {
+        font-size: 50px;
+    }
+}
