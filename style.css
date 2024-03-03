@@ -191,7 +191,7 @@ p.website {
 		background-position: 0% 50%;
 	}
 	50% {
-		background-position: 100% 50%;
+		background-position: 90% 50%;
 	}
 	100% {
 		background-position: 0% 50%;
@@ -201,4 +201,65 @@ p.website {
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: #fff; }
+}
+
+
+@media(max-width:1620px){
+    .inner-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .projects-container {
+        margin-top: 2rem;
+        align-self: start;
+    }
+}
+
+@media(max-width:1150px){
+    body {
+        padding: 2.5rem 0 1rem 0;
+    }
+    .container{
+        width: 90%;
+        margin:auto
+    }
+
+    .container::after, .container::before {
+        width: 30%;
+        height: 30%;
+    }
+}
+
+@media(max-width:650px){
+    .container {
+        padding: 5rem 1rem 1rem 1rem;
+    }
+    .container::after, .container::before {
+        width: 60%;
+        height: 30%;
+    }
+
+    .welcome {
+        font-size: 80px;
+    }
+
+    .welcome-container {
+        min-width: 100px;
+    }
+}
+
+@media(max-width:500px){
+    .container::after, .container::before {
+        width: 60%;
+        height: 20%;
+    }
+
+    .welcome {
+        font-size: 60px;
+    }
+
+    .text p {
+        font-size: 15px;
+    }
 }
