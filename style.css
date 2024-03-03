@@ -48,7 +48,7 @@ body {
 
 .inner-container {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 2fr;
     justify-items: end;
     text-align: left;
 }
@@ -83,14 +83,12 @@ body {
 /* Welcome Text */
 .welcome-container {
     min-width: 450px;
-    max-width: 600px;
     display: flex;
     justify-content: start;
 }
 
 .welcome {
     font-size: 100px;
-    padding-right: auto;
     border-right: 2px solid #fff;
     animation: blink-caret .75s step-end infinite;
     margin-bottom: 2rem;
@@ -182,17 +180,6 @@ p.website {
         transform: translateX(400px);
       }
     100% {
-        opacity: 1;
-        transform: translateX(0);
-      }
-}
-
-@keyframes disappear {
-    100% {
-        opacity: 0;
-        transform: translateX(-400px);
-      }
-    0% {
         opacity: 1;
         transform: translateX(0);
       }
